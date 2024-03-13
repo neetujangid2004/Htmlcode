@@ -172,19 +172,24 @@
         <hr width="10%" color="dodgerblue" size="4">
         <pre>
             <button><img src="images/saroj.PNG" alt="saroj"></button>   <button><img src="images/rajendra.PNG" alt="rajendra"></button>   <button><img src="images/neetu.PNG" alt="neetu"></button>   <button><img src="images/laxmi.PNG" alt="laxmi"></button>   <button><img src="images/annu.PNG" alt="anuu"></button>    <button><img src="images/komal.PNG" alt="komal"></button>   <button><img src="images/yogesh.PNG" alt="yogesh"></button></pre>
-        <img src="images/animation.gif" alt="">
-        <img src="images/add.gif" alt="">
+        <img src="images/animation.gif" alt="" style="margin: 30px;">
+        <img src="images/add.gif" alt="" style="margin: 30px;">
     </div>
     <div style="background-color: rgb(65, 143, 207);">
         <center><h2>*************: Assignment 4 :**************</h2></center><hr>
+        <script>
+            let photos = ["images/song1.jpg","images/song2.jpg","images/song3.jpg","images/song4.jpg","images/song5.jpg","images/song6.jpg"];
+            let currentPhotoIndex = 0;
+            function changePhoto(){
+                let photo = document.getElementById("photo");
+                currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
+                photo.src = photos[currentPhotoIndex];
+            }
+        </script>
         <center>
-            <img src="images/song1.jpg" alt="" width="550" height="400" border="8" style=" border-color: black;">
-            <img src="images/song2.jpg" alt="" width="550" height="400" border="8" style=" border-color: black;">
-            <img src="images/song3.jpg" alt="" width="550" height="400" border="8" style=" border-color: black;">
-            <img src="images/song4.jpg" alt="" width="550" height="400" border="8" style=" border-color: black;">
-            <img src="images/song5.jpg" alt="" width="550" height="400" border="8" style=" border-color: black;">
-            <img src="images/song6.jpg" alt="" width="550" height="400" border="8" style=" border-color: black;">
-            <pre><img src="images/backButton.gif" alt="">       <img src="images/button.gif" alt=""></pre>
+            <img id="photo" src="images/song4.jpg" alt="Default photo" width="550" height="400" border="8" style=" border-color: black;">
+            <pre><button onclick="changePhoto()"><img src="images/backButton.gif" alt=""></button>       <button onclick="changePhoto()"><img src="images/button.gif" alt=""></button></pre>
+            <p>q</p>
         </center>
     </div>
     <div>
@@ -197,7 +202,7 @@
         <h2>: Video tag :</h2>
         <video src="images/VID-20220916-WA0000.mp4" controls autoplay muted width="720" height="300"></video>
         <h2>: Image tag :</h2>
-        <img src="images/images (8).jpg" alt="Image for explain" width="20%" height="300" border="6" longdesc="" crossorigin="anonymous" ismap loading="eager" referrerpolicy="no-referrer-when-downgrade" sizes="50" srcset="" usemap="#">
+        <img src="images/images (7).jpg" alt="Image for explain" width="20%" height="300" border="6" longdesc="" crossorigin="anonymous" ismap="" loading="eager" referrerpolicy="no-referrer-when-downgrade" sizes="50" srcset="" usemap="#">
         <h2>: Plugin tag :</h2>
         <h3>: Embed tag :</h3>
         <embed src="images/pdf.pdf" width="300" height="300">
@@ -262,6 +267,7 @@
     </div>
     <hr>
     <div>
+        <center><h2>*************: Project 2 :**************<hr></h2></center>
     </div>
     <hr>
 </body>
